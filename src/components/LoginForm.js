@@ -21,6 +21,7 @@ class LoginForm extends Component {
     const numberMin = 6;
     const valiInput = !(emailRegex.test(email) && password.length >= numberMin);
     this.setState({ isDisabled: valiInput });
+    // com ajuda do sartunino
   };
 
   handleChange = ({ target: { name, value } }) => {
