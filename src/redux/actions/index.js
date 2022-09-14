@@ -3,4 +3,6 @@ const loginAction = (email) => ({
   payload: email,
 });
 
+// criar actions separas depois como boa pratica
+
 export default loginAction;
