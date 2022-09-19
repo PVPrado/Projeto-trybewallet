@@ -2,23 +2,33 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
+// toFixed(valor a ser pegado pos virgula)
+
 class Header extends Component {
-  constructor() {
-    super();
-    this.state = {
-      spent: 0,
-    };
-  }
+  sumExpense = (expenses) => (
+    // console.log(expenses[0].value);
+    // console.log(expenses[0].currency);
+    // console.log(expenses[0].exchangeRates[expenses[0].currency].ask);
+    expenses.reduce((acc, curr) => {
+      const { value, currency } = curr;
+      const exchange = curr.exchangeRates[currency].ask;
+      const mult = value * exchange;
+      acc += mult;
+      console.log(acc);
+      return acc;
+    }, 0)
+  );
 
   render() {
-    const { user } = this.props;
-    const { spent } = this.state;
+    const { user, expenses } = this.props;
+    console.log(expenses);
+    const valorTotal = expenses.length ? this.sumExpense(expenses) : 0.00;
     return (
       <header>
         <p data-testid="email-field">{ user }</p>
         <p data-testid="total-field">
           {' '}
-          { spent }
+          { valorTotal.toFixed(2) }
           {' '}
         </p>
         <p data-testid="header-currency-field">BRL</p>
@@ -29,10 +39,12 @@ class Header extends Component {
 
 const mapStateToProps = (state) => ({
   user: state.user.email,
+  expenses: state.wallet.expenses,
 });
 
 Header.propTypes = {
-  user: PropTypes.string.isRequired,
-};
+  user: PropTypes.any,
+  expenses: PropTypes.any,
+}.isRequired;
 
 export default connect(mapStateToProps)(Header);

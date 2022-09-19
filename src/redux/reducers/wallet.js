@@ -1,3 +1,6 @@
+import { ADD_EXPENSE } from '../actions/addExpensesActions';
+import { GET_CURRENCIES } from '../actions/currencyActions';
+
 const INITIAL_STATE = {
 
   currencies: [], // array de string
@@ -7,18 +10,45 @@ const INITIAL_STATE = {
 
 };
 
+const addCotacao = (expense, currencies) => {
+  const currenciesReduce = Object.entries(currencies)
+    .reduce((acc, curr) => {
+      const [name, info] = curr;
+      acc[name] = info;
+      return acc;
+    }, {});
+  expense.exchangeRates = currenciesReduce;
+  return expense;
+};
+
+const addId = (expenses) => (
+  expenses.reduce((acc, curr, index) => {
+    curr.id = index;
+    acc.push(curr);
+    return acc;
+  }, [])
+);
+
 const walletReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-  case 'CURRENCIES':
+  case GET_CURRENCIES: {
+    delete action.payload.USDT;
+    const currencies = Object.keys(action.payload);
     return {
       ...state,
-      currencies: action.payload,
+      currencies,
     };
-  case 'EXPENSES':
+  }
+  case ADD_EXPENSE: {
+    const newArray = [...state.expenses, addCotacao(
+      action.payload.expense,
+      action.payload.currencies,
+    )];
     return {
       ...state,
-      expenses: action.payload,
+      expenses: addId(newArray),
     };
+  }
   case 'EDITOR':
     return {
       ...state,
