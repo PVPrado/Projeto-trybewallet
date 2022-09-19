@@ -27,9 +27,7 @@ class Header extends Component {
       <header>
         <p data-testid="email-field">{ user }</p>
         <p data-testid="total-field">
-          {' '}
           { valorTotal.toFixed(2) }
-          {' '}
         </p>
         <p data-testid="header-currency-field">BRL</p>
       </header>

@@ -35,7 +35,7 @@ class WalletForm extends Component {
     const { dispatch } = this.props;
     dispatch(salvaDespesa(this.state));
     this.setState({
-      value: 0,
+      value: '',
       description: '',
       currency: 'USD',
       method: 'Dinheiro',
@@ -43,6 +43,7 @@ class WalletForm extends Component {
     });
   };
 
+  // COM AJUDA COM VICTOR MATIAS
   render() {
     const { currencies } = this.props;
     // console.log(currencies);
