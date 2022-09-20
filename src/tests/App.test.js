@@ -158,7 +158,7 @@ describe('Tela da wallet', () => {
     const methodCell = await screen.findByRole('cell', { name: /Dinheiro/i });
     const tagCell = await screen.findByRole('cell', { name: /Lazer/i });
 
-    expect(totalAmountExpenses.innerHTML).toBe('774.99R$');
+    expect(totalAmountExpenses.innerHTML).toBe('774.99');
     expect(descriptionCell).toBeInTheDocument();
     expect(valueCell).toBeInTheDocument();
     expect(currencyCell).toBeInTheDocument();
@@ -169,7 +169,7 @@ describe('Tela da wallet', () => {
     expect(deleteBtn).toBeInTheDocument();
     userEvent.click(deleteBtn);
 
-    expect(totalAmountExpenses.innerHTML).toBe('0.00R$');
+    expect(totalAmountExpenses.innerHTML).toBe('0.00');
     expect(descriptionCell).not.toBeInTheDocument();
     expect(valueCell).not.toBeInTheDocument();
     expect(currencyCell).not.toBeInTheDocument();
