@@ -175,5 +175,5 @@ describe('Tela da wallet', () => {
     expect(currencyCell).not.toBeInTheDocument();
     expect(methodCell).not.toBeInTheDocument();
     expect(tagCell).not.toBeInTheDocument();
-});
+  });
 });
