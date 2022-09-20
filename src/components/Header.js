@@ -31,7 +31,6 @@ class Header extends Component {
         </p>
         <p data-testid="total-field">
           { valorTotal.toFixed(2) }
-          R$
         </p>
         <p data-testid="header-currency-field">BRL</p>
       </header>
