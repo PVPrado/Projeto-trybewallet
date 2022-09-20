@@ -51,12 +51,13 @@ class LoginForm extends Component {
               name="email"
               data-testid="email-input"
               id="inputEmail"
-              placeholder="Digite seu Email"
+              placeholder="Digite seu email"
               onChange={ this.handleChange }
               value={ email }
             />
           </label>
           <label htmlFor="inputSenha">
+            Senha:
             <input
               type="password"
               name="password"

@@ -24,9 +24,14 @@ class Header extends Component {
     const valorTotal = expenses.length ? this.sumExpense(expenses) : 0.00;
     return (
       <header>
-        <p data-testid="email-field">{ user }</p>
+        <p data-testid="email-field">
+          Usuário:
+          {' '}
+          { user }
+        </p>
         <p data-testid="total-field">
           { valorTotal.toFixed(2) }
+          R$
         </p>
         <p data-testid="header-currency-field">BRL</p>
       </header>

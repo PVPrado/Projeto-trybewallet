@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import fetchCurrencies from '../helpers/fetchCurrencies';
+import fetchCurrencies from '../services/fetchCurrencies';
 import { getCurrencies } from '../redux/actions/currencyActions';
 import { salvaDespesa } from '../redux/actions/addExpensesActions';
 

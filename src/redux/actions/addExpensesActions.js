@@ -1,4 +1,4 @@
-import fetchCurrencies from '../../helpers/fetchCurrencies';
+import fetchCurrencies from '../../services/fetchCurrencies';
 
 export const ADD_EXPENSE = 'ADD_EXPENSE';
 
