@@ -1,5 +1,6 @@
 import { ADD_EXPENSE } from '../actions/addExpensesActions';
 import { GET_CURRENCIES } from '../actions/currencyActions';
+import { DELETE_EXPENSE } from '../actions/deleteExpenseActions';
 
 const INITIAL_STATE = {
 
@@ -49,11 +50,11 @@ const walletReducer = (state = INITIAL_STATE, action) => {
       expenses: addId(newArray),
     };
   }
-  case 'EDITOR':
-    return {
-      ...state,
-      editor: action.payload,
-    };
+  case DELETE_EXPENSE: {
+    const { expenses } = state;
+    const expenseFilter = expenses.filter((expense) => expense.id !== action.id);
+    return { ...state, expenses: expenseFilter };
+  }
   case 'IDTOEDIT':
     return {
       ...state,

@@ -14,14 +14,13 @@ class Header extends Component {
       const exchange = curr.exchangeRates[currency].ask;
       const mult = value * exchange;
       acc += mult;
-      console.log(acc);
+      // console.log(acc);
       return acc;
     }, 0)
   );
 
   render() {
     const { user, expenses } = this.props;
-    console.log(expenses);
     const valorTotal = expenses.length ? this.sumExpense(expenses) : 0.00;
     return (
       <header>
