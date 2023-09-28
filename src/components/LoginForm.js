@@ -42,11 +42,12 @@ class LoginForm extends Component {
     const { email, password, submitted, isDisabled } = this.state;
     if (submitted) return <Redirect to="/carteira" />;
     return (
-      <section>
-        <form>
+      <section id="login">
+        <form id="card_login">
           <label htmlFor="email">
             Email:
             <input
+              className="inputEmailSenha"
               type="email"
               name="email"
               data-testid="email-input"
@@ -59,6 +60,7 @@ class LoginForm extends Component {
           <label htmlFor="inputSenha">
             Senha:
             <input
+              className="inputEmailSenha"
               type="password"
               name="password"
               data-testid="password-input"
@@ -69,6 +71,7 @@ class LoginForm extends Component {
             />
           </label>
           <button
+            id="buttonLogin"
             type="button"
             onClick={ this.handleClick }
             disabled={ isDisabled }

@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+#login {
+  background-image: url("./images/Sem-Título-1.png");
+  align-items: center;
+  display: flex;
+  font-family: Cambria , Cochin , Georgia , Times , serif;
+  height: 100vh;
+  justify-content: center;
+}
+
+#card_login {
+  background-color: rgb(90, 195, 112);
+  border-radius: 20px;
+  padding: 60px;
+  width: 200px;
+  font-size: 22px;
+}
+
+.inputEmailSenha {
+  margin-top: 1px;
+  margin-bottom: 6px;
+  padding: 8px 10px;
+}
+
+#buttonLogin {
+  background-color: rgb(39, 189,181);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 5px;
+}
