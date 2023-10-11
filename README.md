@@ -18,19 +18,22 @@ git clone git@github.com:PVPrado/Projeto-trybewallet.git
 
 Navegue até o diretório do projeto:
 
-bash
-Copy code
+```bash
 cd Projeto-trybewallet
+```
+
 Instale todas as dependências com o comando:
 
-bash
-Copy code
+```bash
 npm install
+```
+
 Após a instalação, inicie o projeto com o comando:
 
-bash
-Copy code
+```bash
 npm start
+```
+
 O projeto será aberto automaticamente em seu navegador.
 
 # Como usar
