@@ -13,8 +13,8 @@ Para utilizar ou testar este projeto, siga os passos abaixo:
 Clone o repositório para o seu ambiente local:
 
 ```bash
-Copy code
 git clone git@github.com:PVPrado/Projeto-trybewallet.git```
+
 Navegue até o diretório do projeto:
 
 bash
