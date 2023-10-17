@@ -21,33 +21,41 @@ class Table extends Component {
   render() {
     const { expenses, dispatch } = this.props;
     return (
-      <table>
+      <table id="table">
         <thead>
           <tr>
-            { header.map((h) => <th key={ h }>{ h }</th>) }
+            { header.map((h) => <th id="tab" className="tables" key={ h }>{ h }</th>) }
           </tr>
         </thead>
         <tbody>
           { expenses.map((e) => (
             <tr key={ e.id }>
-              <td>{ e.description }</td>
-              <td>{ e.tag }</td>
-              <td>{ e.method }</td>
-              <td>{ Number(e.value).toFixed(2) }</td>
-              <td>{ e.exchangeRates[e.currency].name }</td>
-              <td>{ Number(e.exchangeRates[e.currency].ask).toFixed(2) }</td>
-              <td>
+              <td className="tables">{ e.description }</td>
+              <td className="tables">{ e.tag }</td>
+              <td className="tables">{ e.method }</td>
+              <td className="tables">{ Number(e.value).toFixed(2) }</td>
+              <td className="tables">{ e.exchangeRates[e.currency].name }</td>
+              <td
+                className="tables"
+              >
+                {
+                  Number(e.exchangeRates[e.currency].ask).toFixed(2)
+                }
+              </td>
+              <td className="tables">
                 { (e.exchangeRates[e.currency].ask
                    * e.value).toFixed(2) }
               </td>
-              <td>Real</td>
-              <td>
+              <td className="tables">Real</td>
+              <td className="tables">
                 <button
+                  className="edit_remove"
                   type="button"
                 >
                   Editar
                 </button>
                 <button
+                  className="edit_remove"
                   id={ e.id }
                   data-testid="delete-btn"
                   type="button"

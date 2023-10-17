@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("./images/Sem-Título-1.png");
 }
 
 code {
@@ -46,4 +47,25 @@ code {
   display: inline-block;
   font-size: 16px;
   margin-top: 5px;
+  cursor: pointer;
+}
+
+.edit_remove {
+  background-color: black;
+  
+}
+
+#table {
+  margin-top: 30px;
+}
+
+#tab {
+  padding: 20px;
+}
+
+.tables {
+  font-size: 25px;
+  background-color: rgb(220, 202, 202);
+  border: 1px solid black;
+  padding: 1px;
 }

@@ -23,7 +23,7 @@ class Header extends Component {
     const { user, expenses } = this.props;
     const valorTotal = expenses.length ? this.sumExpense(expenses) : 0.00;
     return (
-      <header>
+      <header id="user_header">
         <p data-testid="email-field">
           Usuário:
           {' '}
