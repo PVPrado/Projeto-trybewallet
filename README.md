@@ -8,7 +8,7 @@ Esse projeto é uma aplicação que computa gastos em diferentes moedas e conver
 
 # Pré-requisitos
 
-Redux, react( react-dom, react-icons, react-redux, react-router-dom, react-scripts ) e jest
+Redux, react ( react-dom, react-icons, react-redux, react-router-dom, react-scripts ) e jest
 
 # Instalação
 
