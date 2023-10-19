@@ -4,7 +4,7 @@ Um sistema para te ajudar nos gastos.
 
 # Visão Geral
 
-Esse projeto é uma aplicação que computa gastos em diferentes moedas e converte tudo para uma única moeda.
+Esse projeto é uma aplicação que computa gastos em diferentes moedas e converte tudo para uma única moeda. O maior desafio que tive nesse projeto foi a implementação do redux, foi a primeira vez que faço um projeto com essa biblioteca e por ser algo bem diferente eu tive bastante dificuldade porem consegui me adaptar e concluir esse projeto.
 
 # Ferramentas 
 
