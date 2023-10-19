@@ -6,9 +6,9 @@ Um sistema para te ajudar nos gastos.
 
 Esse projeto é uma aplicação que computa gastos em diferentes moedas e converte tudo para uma única moeda.
 
-# Ferramentas
+# Ferramentas 
 
-Redux, react e jest.
+Javascript, redux, react, jest e a api https://economia.awesomeapi.com.br/json/all.
 
 # Instalação
 
