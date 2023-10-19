@@ -6,9 +6,9 @@ Um sistema para te ajudar nos gastos.
 
 Esse projeto é uma aplicação que computa gastos em diferentes moedas e converte tudo para uma única moeda.
 
-# Pré-requisitos
+# Ferramentas
 
-Redux, react ( react-dom, react-icons, react-redux, react-router-dom, react-scripts ) e jest
+Redux, react e jest.
 
 # Instalação
 
