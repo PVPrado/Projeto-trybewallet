@@ -8,7 +8,11 @@ Esse projeto é uma aplicação que computa gastos em diferentes moedas e conver
 
 # Ferramentas 
 
-Javascript, redux, react, jest e a api https://economia.awesomeapi.com.br/json/all.
+- Javascript
+- Redux
+- React
+- Jest
+- Api https://economia.awesomeapi.com.br/json/all
 
 # Instalação
 
