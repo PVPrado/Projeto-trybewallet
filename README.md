@@ -6,13 +6,13 @@ Um sistema para te ajudar nos gastos.
 
 Esse projeto é uma aplicação que computa gastos em diferentes moedas e converte tudo para uma única moeda. O maior desafio que tive nesse projeto foi a implementação do redux, foi a primeira vez que faço um projeto com essa biblioteca e por ser algo bem diferente eu tive bastante dificuldade mas consegui me adaptar e concluir esse projeto.
 
-# Ferramentas 
+# Ferramentas e tecnologias
 
-- Javascript
-- Redux
-- React
-- Jest
-- Api https://economia.awesomeapi.com.br/json/all
+- Linguagem de programação: **Javascript**
+- Biblioteca: **Redux**
+- Biblioteca: **React**
+- Framework: **Jest**
+- Api: https://economia.awesomeapi.com.br/json/all
 
 # Instalação
 
